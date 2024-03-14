@@ -22,8 +22,8 @@ import {
   tesla,
   shopify,
   project1,
-  project2,
-  project3,
+  project5,
+  project4,
   carrent,
   jobit,
   tripguide,
@@ -51,7 +51,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Next js",
     icon: mobile,
   },
   {
@@ -59,7 +59,7 @@ const services = [
     icon: web,
   },
   {
-    title: "UI/UX Designer",
+    title: "Machine Learning",
     icon: backend,
   },
 ];
@@ -135,39 +135,14 @@ const experiences = [
     company_name: "Habitat For Humanity Trust",
     icon: habitat_logo,
     iconBg: "#FFFFFF",
-    date: "July 2021 - August 2022",
+    date: "July 2022 - August 2022",
     points: [
       " Creating unique and memorable logos that represent a brand’s identity and values",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       " Creating visually appealing and user-friendly interfaces for websites and mobile applications",
     ],
   },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+
 ];
 
 const testimonials = [
@@ -220,10 +195,14 @@ const projects = [
     source_code_link: "https://shadwar123.github.io/E-commerce-Website/",
   },
   {
-    name: "E Commerce",
+    name: "Movix Streaming Palatform",
     description:
-      "Complete responsive E-commerce digital storefront on the internet. It facilitates the transaction between a buyer and seller. It is the virtual space where you showcase products, and online customers make selections.",
+      "A streaming platform that delivers real-time or on-demand multimedia content over the internet. Users can watch movies, TV shows, music, and more without downloading files. This palatform show IMDB ratings of movies there characters and recommend new movies with real time data from APIs.",
     tags: [
+      {
+        name: "SCSS",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
@@ -237,29 +216,29 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://shadwar123.github.io/dating-website/",
+    image: project4,
+    source_code_link: "https://movix-taupe-three.vercel.app/",
   },
   {
-    name: "Tindog",
+    name: "trueSocial (Social media without fake news)",
     description:
-      "A Dating Website for Dogs.It does for pets what dating sites do for human beings. Those looking for that special someone for their pet have to feed in their dog's age, gender and breed, and upload a picture of their cute, furry companion.",
+      "This Social media application is free of fake news , posts my using the power of machine learning. It has all the basic features of social media app like creating post, like-unlike, follow-unfollow. For specific post it gives idea how much the post is correct.",
     tags: [
       {
-        name: "HTML",
+        name: "MERN-stack",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "Neural Netwok Model",
         color: "green-text-gradient",
       },
       {
-        name: "JavaScript",
+        name: "Machine Learning",
         color: "pink-text-gradient",
       },
     ],
-    image: project2,
-    source_code_link: "https://shadwar123.github.io/dating-website/",
+    image: project5,
+    source_code_link: "https://github.com/shadwar123/True-Social",
   },
 ];
 

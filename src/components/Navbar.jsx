@@ -49,7 +49,8 @@ const Navbar = () => {
           <img src={Shadow} alt='logo' className='w-9 h-9 object-contain' style={imgStyle} />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Shadwar Nayyar &nbsp;
-            <span className='sm:block hidden'> | React Developer</span>
+            <span className='sm:block hidden'> | MERN Developer </span>&nbsp;
+            <span className='sm:block hidden'> | Machine Learning Developer</span>
           </p>
         </Link>
 

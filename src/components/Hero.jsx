@@ -15,13 +15,13 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Shadwar Nayyar</span>
+          <h1 className={`${styles.heroHeadText} text-transparent bg-gradient-to-r from-purple-500 via-green-500 to-orange-500 bg-clip-text animate-gradient`}>
+            Hi, I'm <span className=''>Shadwar Nayyar</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Web Developer <br className='sm:block hidden' />
-            currently working as React js Developer <br className='sm:block hidden' />
-            at MattsenKumar LLC.
+          <p className={`${styles.heroSubText} mt-2 text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yello-500 bg-clip-text animate-gradient`}>
+            I am a Web Developer and Machine Learning enthusiast<br className='sm:block hidden' /> from India 
+            currently free to work. <br className='sm:block hidden' />
+            {/* at MattsenKumar LLC. */}
           </p>
         </div>
       </div>

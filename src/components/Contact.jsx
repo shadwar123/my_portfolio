@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
+  const form = useRef();
+  const [formdata, setForm] = useState({
+    user_name: "",
+    user_email: "",
     message: "",
   });
 
@@ -22,7 +22,7 @@ const Contact = () => {
     const { name, value } = target;
 
     setForm({
-      ...form,
+      ...formdata,
       [name]: value,
     });
   };
@@ -30,35 +30,34 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    const serviceId = "service_69goqbm";
+    const tempId = "template_yvvojvo";
+    const pubId = "SHAq_7hSPhsxfTdZ-";
+
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        tempId,
         {
-          from_name: form.name,
+          from_name: formdata.user_name,
           to_name: "Shadwar Nayyar",
-          from_email: form.email,
+          from_email: formdata.user_email,
           to_email: "shadwarnayyar872@gmail.com",
-          message: form.message,
+          message: formdata.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        pubId
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
+          console.log("suceess",formdata)
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
         },
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
@@ -76,7 +75,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
+          ref={form}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
@@ -84,10 +83,9 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
-              name='name'
-              value={form.name}
+              name='user_name'
+              value={formdata.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -95,10 +93,9 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
               type='email'
-              name='email'
-              value={form.email}
+              name='user_email'
+              value={formdata.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -107,9 +104,8 @@ const Contact = () => {
             <textarea
               rows={7}
               name='message'
-              value={form.message}
+              value={formdata.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
