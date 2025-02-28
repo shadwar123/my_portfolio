@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { Shadow, menu, close } from "../assets";
+import {  menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -46,11 +46,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={Shadow} alt='logo' className='w-9 h-9 object-contain' style={imgStyle} />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src="https://avatars.githubusercontent.com/u/121336930?v=4" alt='logo' className='w-9 h-9 object-contain' style={imgStyle} />
+          <p className='text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-white text-[22px] font-semibold cursor-pointer flex leading-[30px]'>
             Shadwar Nayyar &nbsp;
-            <span className='sm:block hidden'> | MERN Developer </span>&nbsp;
-            <span className='sm:block hidden'> | Machine Learning Developer</span>
           </p>
         </Link>
 

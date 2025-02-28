@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import all from "./all.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,13 +27,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import MK_logo from "./company/MK_logo.png";
+
 import habitat_logo from "./company/habitat_logo.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import project1 from "./project1.png";
 import project5 from "./project5.png";
+import whatbytes_logo from "./whatbytes_logo.jpg";
 import project4 from "./project4.png";
+import project2 from "./project2.png";
+import project3 from "./project3.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -43,12 +48,16 @@ export {
   project1,
   project5,
   project4,
+  project2,
+  project3,
   creator,
   MK_logo,
+  whatbytes_logo,
   mobile,
   habitat_logo,
   web,
   github,
+  all,
   menu,
   close,
   css,
